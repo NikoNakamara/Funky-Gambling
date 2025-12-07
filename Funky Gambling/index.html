@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funky Gambling • Discord bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <div class="bg-sprite" data-bg-sprite></div>
+  <img src="fumo1.png" alt="Funky Gambling" class="fumo" data-fumo draggable="false" />
+
+  <header class="site-header">
+    <div class="logo-title">
+      <div class="logo-circle">f</div>
+      <div class="title-stack">
+        <span class="title-main">Funky Gambling</span>
+        <span class="title-sub">cozy gambling & leveling bot</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="commands.html" class="nav-link">Commands</a>
+      <a href="tos.html" class="nav-link">Terms</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark / light theme">
+      <span class="theme-icon" data-theme-icon>☾</span>
+    </button>
+  </header>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Bring <span class="accent">Funky Gambling</span> to your server.</h1>
+        <p class="hero-sub">
+          A cozy Discord bot with gambling, levels, and automatic bad-word filtering.
+          Easy to set up, made for small comfy communities.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1438539946318364762&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">
+            Invite Funky Gambling
+          </a>
+          <a class="btn secondary" href="commands.html">
+            View commands
+          </a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">Leveling</span>
+          <span class="tag">Gambling</span>
+          <span class="tag">Filter</span>
+          <span class="tag">Utility</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="hero-card-body">
+          <p class="hero-card-title">Quick setup</p>
+          <ol class="hero-steps">
+            <li>Invite <strong>Funky Gambling</strong> to your server.</li>
+            <li>Run <code>fumo setup</code> as a moderator.</li>
+            <li>Pick popup, filter &amp; gambling settings.</li>
+            <li>Enjoy your new cozy bot ✨</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Main features</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Leveling system</h3>
+          <p>
+            Members gain XP by chatting and receive cute level-up popups in the channel you choose.
+            You can disable popups per-server with <code>fumo level popup false</code>.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Gambling economy</h3>
+          <p>
+            Simple coin-flip style gambling with server-wide balance.
+            Use <code>fumo cf</code>, daily rewards, and more — and lock it to a specific channel.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Bad-word filter</h3>
+          <p>
+            Built-in insult filter that automatically removes messages with slurs or harsh phrases.
+            Edit the global list with <code>fumo cwl</code> or turn it off if you don&apos;t need it.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h3>Guided setup</h3>
+          <p>
+            Run <code>fumo setup</code> to walk through level popup channel, filter toggle,
+            gambling toggle, and gambling channel — all via buttons &amp; dropdowns.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <div>
+        <h2>Ready to start Funky Gambling?</h2>
+        <p>Add the bot to your server and tweak it exactly how you like.</p>
+      </div>
+      <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1438539946318364762&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">
+        Invite Funky Gambling
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Funky Gambling bot</span>
+    <span class="footer-links">
+      <a href="tos.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

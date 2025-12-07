@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funky Gambling • Commands</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <div class="bg-sprite" data-bg-sprite></div>
+  <img src="fumo1.png" alt="Fumo" class="fumo" data-fumo draggable="false" />
+
+  <header class="site-header">
+    <div class="logo-title">
+      <div class="logo-circle">f</div>
+      <div class="title-stack">
+        <span class="title-main">Funky Gambling</span>
+        <span class="title-sub">commands</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="commands.html" class="nav-link active">Commands</a>
+      <a href="tos.html" class="nav-link">Terms</a>
+      <a href="privacy.html" class="nav-link">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="page-header">
+      <h1>Commands</h1>
+      <p>Prefix: <code>fumo</code></p>
+    </section>
+
+    <section class="command-section">
+      <h2>Setup &amp; configuration</h2>
+      <div class="command-grid">
+        <article class="command-card">
+          <h3><code>fumo setup</code></h3>
+          <p>Interactive setup wizard. Lets you configure level popup channel, filtered words toggle, gambling toggle and gambling channel through buttons &amp; dropdowns.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo cwl</code></h3>
+          <p>Shows the current global and server extra cancelled words list. Moderators can open a popup to edit the global lists.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo cwl true / false</code></h3>
+          <p>Enable or disable the bad-word filter for this server.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo level popup true / false</code></h3>
+          <p>Turn level-up popup messages on or off for this server.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="command-section">
+      <h2>Leveling</h2>
+      <div class="command-grid">
+        <article class="command-card">
+          <h3><code>fumo level</code></h3>
+          <p>Shows your current level and XP progress.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo level @user</code></h3>
+          <p>Shows level and XP for another member.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="command-section">
+      <h2>Economy &amp; gambling</h2>
+      <div class="command-grid">
+        <article class="command-card">
+          <h3><code>fumo bal</code></h3>
+          <p>Shows your current token balance.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo daily</code></h3>
+          <p>Claim a daily reward of tokens.</p>
+        </article>
+        <article class="command-card">
+          <h3><code>fumo cf &lt;amount/all/half&gt;</code></h3>
+          <p>Coin flip gambling. Win or lose the amount you bet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="command-section">
+      <h2>Help</h2>
+      <div class="command-grid">
+        <article class="command-card">
+          <h3><code>fumo help</code></h3>
+          <p>Shows an in-Discord help menu for Funky Gambling</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Funky Gambling Bot</span>
+    <span class="footer-links">
+      <a href="tos.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
